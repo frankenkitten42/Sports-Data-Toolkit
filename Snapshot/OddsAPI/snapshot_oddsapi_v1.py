@@ -22,6 +22,7 @@
 # Status:
 #   Stable – V1.0 baseline
 #
+# Copyright (c) 2026 David Smiley
 # ============================================================
 
 import os
