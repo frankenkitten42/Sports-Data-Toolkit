@@ -1,0 +1,17 @@
+----------------------------------------
+normalize_odds.py
+----------------------------------------
+
+V1.0 — 2026-01-31
+  Initial release
+  - Reads raw snapshots from snapshots_oddsapi/{sport}/
+  - Outputs normalized JSON and CSV to normalized/{sport}/json/ and csv/
+  - Flattens nested bookmaker/market/outcome structure into flat rows
+  - Calculates implied probabilities and vig-removed fair probabilities
+  - Preserves point values for spreads and totals markets
+
+V1.1 — 2026-01-31
+  Fixed odds format handling
+  - Replaced american_to_prob() with decimal_to_prob() to match OddsAPI decimal output
+  - Fixed price type checks from int to (int, float) — was silently filtering all rows
+  - Added point field to normalized output (was being dropped)
