@@ -1,0 +1,13 @@
+snapshot_apisports.py v1.1
+Released: 2025-02-01
+
+Major update fixing API compatibility issues across all sports.
+
+Key improvements:
+- League name resolution (use "NBA" instead of numeric IDs)
+- NFL support (handles season param requirement and API quirks)
+- F1/MMA support (synthetic leagues for non-league sports)
+- Removed misleading 'nba' sport (NBA is in 'basketball')
+- Renamed 'formula1' → 'f1'
+
+See CHANGELOG.md for complete details.
