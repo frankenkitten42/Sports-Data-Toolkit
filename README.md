@@ -173,21 +173,23 @@ python3 api_sniffer.py https://v1.football.api-sports.io \
 ### Workflow 2: Batch API Documentation
 1. Create batch config with sports you need
 2. Run `api_sniffer.py --batch` with `--param-depth basic`
-3. Save reports for team reference
-4. Update configs as APIs change
+4. Save reports for team reference
+5. Update configs as APIs change
 
 ---
 
 ## 🔑 API Keys
 
-Both tools require an API-Sports key. Get yours at: https://api-sports.io/
+** API Keys needed
+snapshot_oddsapi tool requires an OddsAPI key. Get yours at: https://the-odds-aip.com
+snapshot_apisports tool require an API-Sports key. Get yours at: https://api-sports.io/
 
-**Set as environment variable:**
+** Set as environment variable:**
 ```bash
 export APISPORTS_KEY="your_key_here"
 ```
 
-**Or pass directly:**
+** Or pass directly:**
 ```bash
 # api_sniffer.py
 python3 api_sniffer.py https://api.url -H "x-apisports-key: YOUR_KEY"
@@ -208,7 +210,7 @@ Pre-configured batch files are in the `examples/` directory:
 | `apisports_batch_american.json` | Basketball, NFL, Baseball, Hockey | American sports only |
 | `apisports_batch_international.json` | Football, F1, Rugby, MMA | International sports |
 
-**Usage:**
+** Usage: **
 ```bash
 python3 api_sniffer.py --batch examples/apisports_batch_american.json \
   --param-depth basic \
@@ -223,7 +225,7 @@ API-Sports has rate limits on free and paid tiers:
 - **Free tier:** Usually 100-300 calls/hour
 - **Paid tier:** 500-5,000 calls/hour
 
-**api_sniffer.py depth levels:**
+** api_sniffer.py depth levels: **
 - `none`: ~35 calls per API (endpoint discovery only)
 - `basic`: ~100-150 calls per API (recommended)
 - `full`: ~250-350 calls per API (comprehensive)
@@ -266,6 +268,7 @@ See [CHANGELOG.md](docs/CHANGELOG.md) for detailed version history.
 **Current Versions:**
 - api_sniffer.py: v2.0
 - snapshot_apisports.py: v1.1
+- snapshot_oddsapi.py: v1.1
 
 ---
 
@@ -273,4 +276,4 @@ See [CHANGELOG.md](docs/CHANGELOG.md) for detailed version history.
 
 Built for efficient sports data collection and API exploration. Special focus on API-Sports.io integration.
 
-**Happy API exploring! 🚀**
+**Happy Sports Data Harvesting! 🚀**
