@@ -50,6 +50,9 @@ python3 snapshot_oddsapi.py key {YOUR_KEY}
 
 # Collect NHL data
 python3 snapshot_oddsapi.py --sports hockey_nhl
+---
+
+** Documentation:** [OddsAPI_README.md](docs/OddsAPI_README.md)
 
 ---
 
@@ -77,8 +80,7 @@ python3 snapshot_apisports.py american-football \
   --leagues 1 \
   --seasons 2024 \
   --collection games
-
-```
+---
 
 ---
 
