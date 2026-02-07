@@ -77,6 +77,7 @@ python3 snapshot_apisports.py american-football \
   --leagues 1 \
   --seasons 2024 \
   --collection games
+
 ```
 
 ---
